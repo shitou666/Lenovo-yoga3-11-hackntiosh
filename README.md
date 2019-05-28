@@ -26,11 +26,15 @@
   
 ##三、安装方法    
     *  更新官网最新版bios，修改 bios 设置 Secure Boot → disable、Boot MODE → Legacy Support、Boot MODE → Legacy Support  
+    
     *  下载镜像使用用transmac将镜像刻录到U盘  
-    *  使用使用我的10.14.3 目录下面的EFI文件夹替换镜像自带的EFI引导  
-    *  详细安装过程请参考 daliansky 写的安装教程
- [联想小新Air 13黑苹果安装教程](https://blog.daliansky.net/Lenovo-Xiaoxin-Air-13-macOS-Mojave-installation-tutorial.html)
+    
+    *  使用使用我的10.14.3 目录下面的EFI文件夹替换镜像自带的EFI引导   
+    
+    *  详细安装过程请参考 daliansky 写的安装教程  
+     [联想小新Air 13黑苹果安装教程](https://blog.daliansky.net/Lenovo-Xiaoxin-Air-13-macOS-Mojave-installation-tutorial.html)
     *  完成系统安装后，拷贝EFI引导文件夹到硬盘EFI分区，添加到启动项（windows 下面用 diskgenius 复制到EFI分区，然后用 easy uefi 添加启动项，单 mac 系统需要用pe 来添加启动项） 
+    
 ##三、备注：     
   1.打开访达→左上角选择前往→前往文件夹 进入 /System/Library/Extensions 目录下删除  AppleIntelLpssI2C.kext / AppleIntelLpssI2CController.kext两个文件，重建缓存后重启，syna的目标驱动现在有个bug，就是如果进入了Windows系统，然后再进去mac系统将会不能使用触摸板，唯一解决方法就是多重启两次mac系统。该bug等待以后驱动作者更新版本解决。    
 
